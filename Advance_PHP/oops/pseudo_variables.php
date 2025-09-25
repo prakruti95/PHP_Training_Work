@@ -5,7 +5,7 @@
 */
 class A 
 {
-    public $str="Hi Brijesh";
+    public $str="Hi Prakruti";
     public function Display()
     {
        echo $this->str;
