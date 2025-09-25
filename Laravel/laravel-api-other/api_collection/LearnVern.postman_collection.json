@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "5e490005-2885-4b12-9bbe-863a44583cd4",
+		"name": "LearnVern",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/apiCrud?page=3&search=meet",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"apiCrud"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "3"
+						},
+						{
+							"key": "search",
+							"value": "meet"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/apiCrud/create",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"apiCrud",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "API",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "TEST",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "meetshahlearnvern@mailinator.com",
+							"type": "text"
+						},
+						{
+							"key": "contact",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "API TEST ADDRESS",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "101",
+							"type": "text"
+						},
+						{
+							"key": "profile",
+							"type": "file",
+							"src": "/C:/Users/Admin/Documents/demo-1.jpg"
+						},
+						{
+							"key": "hobbies[]",
+							"value": "Cycling",
+							"type": "text"
+						},
+						{
+							"key": "hobbies[]",
+							"value": "Biking",
+							"type": "text"
+						},
+						{
+							"key": "hobbies[]",
+							"value": "Reading",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/apiCrud",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"apiCrud"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "API Update",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "TEST Update",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "meetshahlearnvern@mailinator.com",
+							"type": "text"
+						},
+						{
+							"key": "contact",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "API TEST ADDRESS Updated",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "101",
+							"type": "text"
+						},
+						{
+							"key": "hobbies[]",
+							"value": "Cycling",
+							"type": "text"
+						},
+						{
+							"key": "hobbies[]",
+							"value": "Biking",
+							"type": "text"
+						},
+						{
+							"key": "hobbies[]",
+							"value": "Reading",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/apiCrud/71",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"apiCrud",
+						"71"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/apiCrud/71/edit",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"apiCrud",
+						"71",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/apiCrud/71",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"apiCrud",
+						"71"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Image Update",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/apiCrud/71",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"apiCrud",
+						"71"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
